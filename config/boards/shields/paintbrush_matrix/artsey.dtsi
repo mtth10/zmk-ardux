@@ -185,7 +185,6 @@
 #define ARDUX_BASE_S S
 #define ARDUX_BASE_R R
 #define ARDUX_BASE_A A
-#define ARDUX_COMBO_N N
 #if ARDUX_COLEMAK
 #define ARDUX_BASE_A T
 #define ARDUX_BASE_R S
