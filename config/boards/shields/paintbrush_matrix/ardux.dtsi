@@ -496,7 +496,7 @@
 			label = "Number";
 			bindings = <
 				LEADING_NONES
-				&mkp N0                        &kp N4    &kp N5    &kp N6
+				&kp N0                        &kp N4    &kp N5    &kp N6
 				MIDDLE_NONES
 				&mo LAYER_ID_NUMBERS           &kp N1    &kp N2    &kp N3
 				TRAILING_NONES
