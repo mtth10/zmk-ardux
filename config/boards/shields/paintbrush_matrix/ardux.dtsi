@@ -166,7 +166,7 @@
 				LEADING_NONES                                          \
 				&mo LAYER_ID_CUSTOM       &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  \
 				MIDDLE_NONES                                           \
-				&none		 &none  &none &none  \
+				&kp F1		 &kp f2  &kp F3 &kp F4  \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -251,10 +251,10 @@
 		combo_semi        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_A>; bindings = <&kp SEMI>; };
 		combo_colon       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_A>; bindings = <&kp COLON>; };
 		
-		combo_seven { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_E>; bindings = <&kp N7>; };
-		combo_eight { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_N>; bindings = <&kp N8>; };
-		combo_zero  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_S>; bindings = <&kp N0>; };
-		combo_period { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_T>; bindings = <&kp PERIOD>; };
+		combo_seven  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_E>; bindings = <&kp N7>; };
+		combo_eight  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_N>; bindings = <&kp N8>; };
+		combo_nine   { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_S>; bindings = <&kp N9>; };
+		combo_zero   { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_T>; bindings = <&kp N0>; };
 		
 		combo_less   { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp LT>; };
 		combo_great  { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_E>; bindings = <&kp GT>; };
@@ -285,10 +285,9 @@
 		combo_question      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_I KEY_N>; bindings = <&kp QMARK>; };
 		
 		combo_play    { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_N>; bindings = <&kp C_PP>; };
-		combo_nine    { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_N>; bindings = <&kp N9>; };
-		combo_grave   { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_N>; bindings = <&kp GRAVE>; };
-		combo_percent { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_N>; bindings = <&kp PERCENT>; };
-		combo_plus    { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_S KEY_T>; bindings = <&kp PLUS>; };
+		combo_grave   { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_O>; bindings = <&kp GRAVE>; };
+		combo_percent { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_O>; bindings = <&kp PERCENT>; };
+		combo_plus    { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_S KEY_A>; bindings = <&kp PLUS>; };
 		
 		/*****************************************
 		 * 4 key combos
@@ -496,7 +495,7 @@
 			label = "Number";
 			bindings = <
 				LEADING_NONES
-				&kp N0                        &kp N4    &kp N5    &kp N6
+				&kp PERIOD                        &kp N4    &kp N5    &kp N6
 				MIDDLE_NONES
 				&mo LAYER_ID_NUMBERS           &kp N1    &kp N2    &kp N3
 				TRAILING_NONES
