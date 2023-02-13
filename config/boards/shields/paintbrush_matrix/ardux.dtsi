@@ -166,7 +166,7 @@
 				LEADING_NONES                                          \
 				&mo LAYER_ID_CUSTOM       &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  \
 				MIDDLE_NONES                                           \
-				&kp F1		 &kp f2  &kp F3 &kp F4  \
+				&kp F1		 &kp F2  &kp F3 &kp F4  \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -267,6 +267,13 @@
 		combo_amps  { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_S>; bindings = <&kp AMPS>; };
 		
 		combo_ins   { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_I>; bindings = <&kp INS>; };
+		
+		combo_f5   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F5>; };
+		combo_f6   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_S>; bindings = <&kp F6>; };
+		combo_f7   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_T>; bindings = <&kp F7>; };
+		combo_f8   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_R>; bindings = <&kp F8>; };
+		combo_f9   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_R>; bindings = <&kp F9>; };
+		combo_f10   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_T>; bindings = <&kp F10>; };
 
 		/*****************************************
 		 * 3 key combos
@@ -285,8 +292,13 @@
 		combo_question      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_I KEY_N>; bindings = <&kp QMARK>; };
 		
 		combo_play    { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_N>; bindings = <&kp C_PP>; };
+		combo_f11    { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_S>; bindings = <&kp F11>; };
+		combo_f12    { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_S KEY_T>; bindings = <&kp F12>; };
+		
 		combo_grave   { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_O>; bindings = <&kp GRAVE>; };
+		
 		combo_percent { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_O>; bindings = <&kp PERCENT>; };
+		
 		combo_plus    { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_S KEY_A>; bindings = <&kp PLUS>; };
 		
 		/*****************************************
