@@ -6,22 +6,17 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 
-#define ARDUX_LEFT 1
+/ {
 
-#define KEY_N 3
-#define KEY_E 2
-#define KEY_I 1
-#define KEY_O 0
+    keymap {
+        compatible = "zmk,keymap";
 
-#define KEY_T 7
-#define KEY_S 6
-#define KEY_R 5
-#define KEY_A 4
-
-#define LEADING_NONES NONE(0,0,0)
-#define MIDDLE_NONES NONE(0,0,0)
-#define TRAILING_NONES NONE(0,0,0)
-
-#include "ardux.dtsi"
+        default {
+            bindings = <
+            &kp N0  &kp N1  &kp N2  &kp N3
+            &kp N4  &kp N5  &kp N6  &kp N7
+            >;
+        };
+    };
+};
