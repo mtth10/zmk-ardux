@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define ARDUX_LEFT 1
-/ {
 
 #define KEY_N 3
 #define KEY_E 2
