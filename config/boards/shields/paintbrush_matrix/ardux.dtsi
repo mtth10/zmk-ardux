@@ -207,7 +207,7 @@
 #define LAYER_ID_SYMBOLS 2
 #define LAYER_ID_PARENTHETICALS 3
 #define LAYER_ID_NAVIGATION 4
-#define LAYER_ID_BT_SEL 5
+#define LAYER_ID_GAME 5
 #define LAYER_ID_CUSTOM 6
 #define LAYER_ID_BIG_SYM 7
 #define LAYER_ID_BIG_FUNCTION 8
@@ -273,13 +273,19 @@
 		combo_f7   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_T>; bindings = <&kp F7>; };
 		combo_f8   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_R>; bindings = <&kp F8>; };
 		combo_f9   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_R>; bindings = <&kp F9>; };
-		combo_f10   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_T>; bindings = <&kp F10>; };
-
+		combo_f10  { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_T>; bindings = <&kp F10>; };
+		combo_prev   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_E>; bindings = <&kp C_PREV>; };
+		combo_next   { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_N>; bindings = <&kp C_NEXT>; };
+		combo_usb    { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <ARDUX_BT_BOTTOM>; };
+		combo_bt     { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_T>; bindings = <ARDUX_BT_TOP>; };
+		
+		
 		/*****************************************
 		 * 3 key combos
 		 *****************************************/
 		combo_esc              { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_E KEY_N>; bindings = <&kp ESC>; };
 		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_E KEY_T>; bindings = <&tog LAYER_ID_NAVIGATION>; };
+		combo_game             { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_I KEY_S>; bindings = <&tog LAYER_ID_GAME>; };
 
 		combo_m             { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_S>; bindings = <&kp M>; };
 		combo_d             { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_N>; bindings = <&kp D>; };
@@ -298,8 +304,8 @@
 		combo_grave   { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_O>; bindings = <&kp GRAVE>; };
 		
 		combo_percent { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_O>; bindings = <&kp PERCENT>; };
-		
 		combo_plus    { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_S KEY_A>; bindings = <&kp PLUS>; };
+		
 		
 		/*****************************************
 		 * 4 key combos
@@ -307,8 +313,6 @@
 		combo_tab             { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_I KEY_E KEY_N>; bindings = <&kp TAB>; };
 		combo_space           { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_S KEY_T>; bindings = <&kp SPACE>; };
 		combo_shift           { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_O KEY_I KEY_E KEY_T>; bindings = <&sk LSHFT>; };
-		combo_layer_bt_select { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_O KEY_N KEY_T>; bindings = <&tog LAYER_ID_BT_SEL>; };
-		combo_bt_clr          { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_R KEY_S KEY_I KEY_E>; bindings = <&bt BT_CLR>; };
 
 		combo_z         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_O KEY_I KEY_E KEY_N>; bindings = <&kp Z>; };
 		combo_caps_lock { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_S KEY_N>; bindings = <&kp CAPS>; };
@@ -543,13 +547,12 @@
 				TRAILING_NONES
 			>;
 		};
-		bt {
-			label = "BT";
+		game {
+			label = "Game";
 			bindings = <
 				LEADING_NONES
-				ARDUX_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
-				MIDDLE_NONES
-				ARDUX_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
+				&kp N0 &kp N1 &kp N2 &kp N3 
+				&kp N4 &kp N5 &kp N6 &kp N7 
 				TRAILING_NONES
 			>;
 		};
