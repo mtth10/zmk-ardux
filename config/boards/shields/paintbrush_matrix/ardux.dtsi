@@ -207,7 +207,7 @@
 #define LAYER_ID_SYMBOLS 2
 #define LAYER_ID_PARENTHETICALS 3
 #define LAYER_ID_NAVIGATION 4
-#define LAYER_ID_GAME 5
+#define LAYER_ID_NULL 5
 #define LAYER_ID_CUSTOM 6
 #define LAYER_ID_BIG_SYM 7
 #define LAYER_ID_BIG_FUNCTION 8
@@ -283,7 +283,6 @@
 		 *****************************************/
 		combo_esc              { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_E KEY_N>; bindings = <&kp ESC>; };
 		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_E KEY_T>; bindings = <&tog LAYER_ID_NAVIGATION>; };
-		combo_game             { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_I KEY_S>; bindings = <&tog LAYER_ID_GAME>; };
 
 		combo_m             { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_S>; bindings = <&kp M>; };
 		combo_d             { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_E KEY_N>; bindings = <&kp D>; };
@@ -545,12 +544,12 @@
 				TRAILING_NONES
 			>;
 		};
-		game {
-			label = "Game";
+		null {
+			label = "Null";
 			bindings = <
 				LEADING_NONES
-				&kp N0 &kp N1 &kp N2 &kp N3 
-				&kp N4 &kp N5 &kp N6 &kp N7 
+				&none &none &none &none 
+				&none &none &none &none 
 				TRAILING_NONES
 			>;
 		};
